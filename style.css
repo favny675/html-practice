@@ -9,6 +9,7 @@
     --color-muted: #6b7280;
     --color-border: #e5e7eb;
     --shadow-soft: 0 10px 25px rgba(15, 23, 42, 0.08);
+    --color-bg: blue;
 }
 
 /* ===== Reset / Base Elements ===== */
