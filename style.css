@@ -1,0 +1,545 @@
+/* ===== Root Tokens (colors, shadows) ===== */
+:root {
+    --color-primary: #1b5cff;
+    --color-primary-dark: #1246c2;
+    --color-secondary: #0f9d58;
+    --color-background: #f6f8fc;
+    --color-surface: #ffffff;
+    --color-text: #1f2937;
+    --color-muted: #6b7280;
+    --color-border: #e5e7eb;
+    --shadow-soft: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+/* ===== Reset / Base Elements ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Sans TC", system-ui, -apple-system, sans-serif;
+    background: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ===== Header / Navigation ===== */
+header {
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.navbar-container h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-primary);
+}
+
+.navbar-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: flex-end;
+}
+
+.link {
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.link:hover {
+    color: var(--color-primary);
+}
+
+/* ===== Shared Section Layout ===== */
+section {
+    padding: 64px 24px;
+}
+
+.section-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    gap: 24px;
+}
+
+.section-container h2 {
+    font-size: 32px;
+}
+
+.section-intro {
+    color: var(--color-muted);
+    max-width: 760px;
+}
+
+.section-media {
+    background: var(--color-surface);
+    border-radius: 16px;
+    padding: 12px;
+    box-shadow: var(--shadow-soft);
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    align-items: center;
+    gap: 32px;
+    padding: 72px 24px 56px;
+}
+
+.hero-content h2 {
+    font-size: 38px;
+}
+
+.hero-content p {
+    margin-top: 12px;
+    color: var(--color-muted);
+}
+
+.hero-content span {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+/* ===== Buttons ===== */
+.btn-primary,
+.btn-secondary {
+    padding: 12px 22px;
+    border-radius: 999px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: var(--color-primary);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: var(--color-primary-dark);
+}
+
+.btn-secondary {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+/* ===== About Section ===== */
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.about-content article {
+    background: var(--color-surface);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: var(--shadow-soft);
+}
+
+/* ===== Cards and Grids (features, stats, testimonials) ===== */
+.features-grid,
+.reasons-container,
+.faq-container,
+.stats-grid,
+.testimonials-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.features-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* Shared card look */
+.feature-card,
+.reason-item,
+.faq-item,
+.stat-card,
+.testimonial-card {
+    background: var(--color-surface);
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-soft);
+}
+
+.stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    text-align: center;
+}
+
+.stat-card h3 {
+    font-size: 28px;
+    color: var(--color-primary);
+}
+
+.testimonial-name {
+    margin-top: 12px;
+    color: var(--color-muted);
+}
+
+/* ===== Quick Links ===== */
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.links-container a {
+    background: var(--color-surface);
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--color-border);
+    font-weight: 600;
+}
+
+.links-container a:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+/* ===== Footer ===== */
+footer {
+    background: var(--color-text);
+    color: #ffffff;
+    padding: 48px 24px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.footer-links ul {
+    display: grid;
+    gap: 8px;
+}
+
+.footer-links a {
+    color: #ffffff;
+}
+
+.footer-links a:hover {
+    color: var(--color-secondary);
+}
+
+/* ===== Dashboard Layout ===== */
+.dashboard-body {
+    background: #eef2f7;
+}
+
+.dashboard-layout {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+}
+
+.sidebar {
+    background: var(--color-text);
+    color: #ffffff;
+    padding: 24px;
+    display: grid;
+    gap: 24px;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sidebar nav ul {
+    display: grid;
+    gap: 12px;
+}
+
+.sidebar a {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.sidebar a:hover {
+    color: var(--color-secondary);
+}
+
+.dashboard-main {
+    padding: 32px;
+    display: grid;
+    gap: 24px;
+}
+
+.dashboard-header {
+    background: var(--color-surface);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-soft);
+    display: grid;
+    gap: 8px;
+}
+
+.dashboard-header p {
+    color: var(--color-muted);
+}
+
+.dashboard-cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.dashboard-card {
+    background: var(--color-surface);
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-soft);
+}
+
+.dashboard-card h3 {
+    color: var(--color-primary);
+}
+
+.dashboard-details {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.detail-panel {
+    background: var(--color-surface);
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-soft);
+}
+
+.detail-panel ul {
+    display: grid;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.detail-panel li {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-muted);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dashboard-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== Box Model Card Demo (simple page) ===== */
+/* Page background and base text for the box model example page */
+.box-page-body {
+    background: #0b1120;
+    color: #e5e7eb;
+    font-family: "Noto Sans TC", system-ui, -apple-system, sans-serif;
+}
+
+/* Center the content and give it some breathing room */
+.box-page-main {
+    max-width: 640px;
+    margin: 48px auto;
+    padding: 0 16px;
+}
+
+.box-page-main h1 {
+    margin-bottom: 12px; /* margin here pushes elements around the heading */
+}
+
+.box-page-intro {
+    color: #cbd5f5;
+    margin-bottom: 24px;
+}
+
+/* 
+   This is the main card we use to explain the box model:
+   - margin: space OUTSIDE the border
+   - border: line around the padding and content
+   - padding: space INSIDE the border, around the content
+   - content: the text and elements inside the box
+*/
+.box-card {
+    width: 100%;
+    max-width: 360px;
+    background: var(--color-surface);
+    margin: 32px auto;              /* margin = outside spacing */
+    padding: 20px;                  /* padding = inside spacing */
+    border: 4px solid var(--color-primary); /* border = visible line around the box */
+    border-radius: 16px;
+    box-shadow: var(--shadow-soft);
+    color: var(--color-text);
+}
+
+.box-card-title {
+    margin-bottom: 12px; /* margin here separates the title from the text below */
+}
+
+.box-card-text + .box-card-text {
+    margin-top: 8px; /* margin between text paragraphs */
+}
+
+/* ===== Flexbox Demo Page ===== */
+/* Page background and base styles for the Flexbox examples */
+.flex-page-body {
+    background: #020617;
+    color: #e5e7eb;
+    font-family: "Noto Sans TC", system-ui, -apple-system, sans-serif;
+}
+
+.flex-page-main {
+    max-width: 900px;
+    margin: 48px auto;
+    padding: 0 16px 48px;
+}
+
+.flex-page-main h1 {
+    margin-bottom: 12px;
+}
+
+.flex-page-intro {
+    color: #cbd5f5;
+    margin-bottom: 24px;
+}
+
+.flex-section {
+    margin-top: 32px;
+}
+
+.flex-section-note {
+    color: #9ca3af;
+    margin: 4px 0 16px;
+}
+
+/* Shared flex demo container:
+   - display: flex          → turns the container into a flexbox
+   - gap: space between flex items
+*/
+.flex-demo {
+    display: flex;          /* FLEX STARTS HERE */
+    gap: 12px;
+    padding: 12px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    background: rgba(15, 23, 42, 0.7);
+}
+
+/* Small boxes inside each flex container */
+.flex-item {
+    background: var(--color-primary);
+    color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    min-width: 48px;
+}
+
+/* Slightly taller item so we can see vertical alignment clearly */
+.flex-item-tall {
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+/* 1. flex-direction examples */
+.flex-direction-row {
+    /* Children flow in a row, from left to right (default) */
+    flex-direction: row;
+}
+
+.flex-direction-column {
+    /* Children are stacked vertically, top to bottom */
+    flex-direction: column;
+}
+
+/* 2. justify-content examples (main axis alignment) */
+.flex-justify-space-between {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-justify-center {
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* 3. align-items example (cross axis alignment) */
+.flex-align-center {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 4. flex-wrap example */
+.flex-wrap-demo {
+    flex-direction: row;
+    flex-wrap: wrap; /* allows items to move onto a new line when needed */
+}
+

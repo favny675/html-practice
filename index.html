@@ -1,18 +1,413 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <header>
-            Employee Onboarding Page
-        </header>
-        <main>
-            <section>
-                <form>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="e.g. name@example.com" required>
-                    <label for="password">Password</label>
-                    <input type="password" id="passwaord" placeholder="Enter your password" required>
-                    </form>
-            </section>
-        </main>
-    </body>
-    </html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="I-swipe Cohort 3.0 Interns">
+    <meta name="description" content="HR Management System - Complete HR Solutions">
+    <meta name="keywords" content="HR, Human Resources, Recruitment, Payroll, Employee Management">
+    <title>HR Management System - Streamline Your Workforce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== HEADER / NAVIGATION SECTION ===== -->
+    <!-- The navigation bar provides easy access to all main sections of the website -->
+    <!-- Users can navigate to different pages and access key features from any location on the site -->
+    <header>
+        <nav>
+            <div class="navbar-container">
+                <h1 class ="h1text">Hms</h1>
+                <ul>
+                    <li><a href="#home" class="link">Home</a></li>
+                    <li><a href="#about" class="link">About Us</a></li>
+                    <li><a href="#features" class="link">Features</a></li>
+                    <li><a href="#stats" class="link">Stats</a></li>
+                    <li><a href="#why-choose" class="link">Why Choose Us</a></li>
+                    <li><a href="#testimonials" class="link">Testimonials</a></li>
+                    <li><a href="#faq" class="link">FAQ</a></li>
+                    <li><a href="dashboard.html" class="link">Dashboard</a></li>
+                    <li><a href="signup.html" class="link">Sign Up</a></li>
+                    <li><a href="signIn.html" class="link">Sign In</a></li>
+                    <li><a href="contact.html" class="link">Contact</a></li>
+                    <li><a href="aboutUs.html" class="link">Learn More</a></li>
+                    <li><a href="gallery.html" class="link">Gallery</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== HOME / HERO SECTION ===== -->
+    <!-- The home section welcomes visitors and introduces the core value proposition -->
+    <!-- Contains call-to-action buttons to encourage user engagement and conversion -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h2 id="welcometext">Welcome</h2>
+                <h2>to HR Management System</h2>
+            <p><span>Transform</span> the way you manage your workforce with our comprehensive Human Resources Management Solution. Automate processes, increase productivity, and create a better workplace for your employees.</p>
+            <p>Whether you're a small business or a large enterprise, our HR platform is designed to streamline recruitment, employee management, payroll, and performance tracking all in one place.</p>
+            <div class="cta-buttons">
+                <a href="signup.html" class="btn-primary">Get Started Today</a>
+                <a href="#features" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <!-- Hero image -->
+        <div class="section-media">
+            <img src="https://via.placeholder.com/700x450?text=HR+Dashboard" alt="Team members reviewing HR dashboard">
+        </div>
+    </section>
+
+    <!-- ===== ABOUT US SECTION ===== -->
+    <!-- This section provides information about the company's mission, vision, and values -->
+    <!-- Helps potential customers understand the company's commitment and expertise -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <h2>About Our HR Management System</h2>
+            <div class="about-content">
+                <!-- About section image -->
+                <div class="section-media">
+                    <img src="https://via.placeholder.com/650x420?text=Our+Mission" alt="HR professionals collaborating on mission goals">
+                </div>
+                <!-- Mission Statement -->
+                <article>
+                    <h3>Our Mission</h3>
+                    <p>We are committed to revolutionizing Human Resources management by providing innovative, user-friendly, and cost-effective solutions. Our mission is to empower organizations to build stronger teams, improve employee engagement, and drive business growth through efficient HR operations.</p>
+                </article>
+                
+                <!-- Company Overview -->
+                <article>
+                    <h3>What We Offer</h3>
+                    <p>Our HR Management System offers a complete suite of tools to manage every aspect of your human resources department. From recruitment and onboarding to performance management and employee development, we provide integrated solutions that reduce administrative burden and promote a positive workplace culture.</p>
+                    <p>With our system, HR teams can focus on strategic initiatives rather than getting caught up in repetitive administrative tasks. We believe that effective HR management is the foundation of a successful organization.</p>
+                </article>
+                
+                <!-- Vision Statement -->
+                <article>
+                    <h3>Our Vision</h3>
+                    <p>We envision a future where HR professionals use technology to create meaningful work experiences. Our vision is to be the leading HR management platform trusted by organizations worldwide to unlock human potential and drive organizational success.</p>
+                </article>
+                
+                <!-- Link to detailed about page -->
+                <p><a href="aboutUs.html">Read more about us</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURES SECTION ===== -->
+    <!-- This section highlights the key features and capabilities of the HR Management System -->
+    <!-- Organized into feature cards for easy scanning and comprehension -->
+    <section id="features" class="features-section">
+        <div class="section-container">
+            <h2>Key Features of Our HR Application</h2>
+            <p class="section-intro">Our comprehensive suite of features is designed to meet the diverse needs of modern HR departments:</p>
+            
+            <!-- Features section image -->
+            <div class="section-media">
+                <img src="https://via.placeholder.com/700x420?text=Core+Features" alt="Illustration of HR management features">
+            </div>
+            <div class="features-grid">
+                <!-- Feature 1: Employee Management -->
+                <div class="feature-card">
+                    <h3>Employee Management</h3>
+                    <p>Maintain centralized employee profiles with complete information including personal details, employment history, skills, and certifications. Easily track employee status, department assignments, and organizational structure in real-time.</p>
+                </div>
+
+                <!-- Feature 2: Recruitment & Onboarding -->
+                <div class="feature-card">
+                    <h3>Recruitment & Onboarding</h3>
+                    <p>Streamline your hiring process from job posting to final onboarding. Manage applications, conduct interviews, and track candidate progress through an intuitive workflow. Automate new employee onboarding to ensure a smooth start.</p>
+                </div>
+
+                <!-- Feature 3: Leave & Attendance -->
+                <div class="feature-card">
+                    <h3>Leave & Attendance Management</h3>
+                    <p>Track employee attendance in real-time with automated attendance records. Manage leave requests with configurable approval workflows. Monitor attendance patterns and generate compliance reports effortlessly.</p>
+                </div>
+
+                <!-- Feature 4: Payroll Management -->
+                <div class="feature-card">
+                    <h3>Payroll Processing</h3>
+                    <p>Automate salary calculations, tax deductions, and statutory compliance. Generate accurate payslips and maintain detailed payroll records. Ensure timely and error-free salary processing with our robust payroll module.</p>
+                </div>
+
+                <!-- Feature 5: Performance Management -->
+                <div class="feature-card">
+                    <h3>Performance Appraisal</h3>
+                    <p>Conduct regular performance reviews with structured appraisal templates. Set goals, track progress, and provide feedback to drive employee development. Identify top performers and create development plans for career growth.</p>
+                </div>
+
+                <!-- Feature 6: Role-Based Access -->
+                <div class="feature-card">
+                    <h3>Role-Based Access Control</h3>
+                    <p>Manage different user roles including Staff, Manager, and HR Administrator. Each role has specific permissions to access relevant modules and data. Ensure data security and maintain proper workflow approvals based on organizational hierarchy.</p>
+                </div>
+
+                <!-- Feature 7: Reports & Analytics -->
+                <div class="feature-card">
+                    <h3>Reports & Analytics</h3>
+                    <p>Generate comprehensive reports on employee demographics, payroll, attendance, and performance. Gain actionable insights through analytics dashboards. Make data-driven decisions to improve HR strategy and organizational performance.</p>
+                </div>
+
+                <!-- Feature 8: Document Management -->
+                <div class="feature-card">
+                    <h3>Document Management</h3>
+                    <p>Securely store and manage employee documents, contracts, and certifications. Maintain compliance documentation with automatic version control. Access important documents anytime with our secure cloud-based storage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STATS SECTION ===== -->
+    <!-- Highlights quick numbers to build trust and show impact -->
+    <section id="stats" class="stats-section">
+        <div class="section-container">
+            <h2>Trusted by Growing Teams</h2>
+            <p class="section-intro">Simple numbers that show the impact our HR platform makes every day.</p>
+            <!-- Stats section image -->
+            <div class="section-media">
+                <img src="https://via.placeholder.com/700x420?text=Team+Growth" alt="Growth chart showing HR team progress">
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>500+</h3>
+                    <p>Companies using the platform</p>
+                </div>
+                <div class="stat-card">
+                    <h3>120k</h3>
+                    <p>Employees managed</p>
+                </div>
+                <div class="stat-card">
+                    <h3>30%</h3>
+                    <p>Average time saved on admin tasks</p>
+                </div>
+                <div class="stat-card">
+                    <h3>99.9%</h3>
+                    <p>System uptime</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US SECTION ===== -->
+    <!-- This section explains the competitive advantages and unique value propositions -->
+    <!-- Helps convince potential customers why they should choose this system over competitors -->
+    <section id="why-choose" class="why-choose-section">
+        <div class="section-container">
+            <h2>Why Choose Our HR Management System?</h2>
+            
+            <!-- Why choose us image -->
+            <div class="section-media">
+                <img src="https://via.placeholder.com/700x420?text=Why+Choose+Us" alt="Happy HR team working together">
+            </div>
+            <div class="reasons-container">
+                <!-- Reason 1: User-Friendly Interface -->
+                <div class="reason-item">
+                    <h3>User-Friendly Interface</h3>
+                    <p>Our intuitive design ensures that both HR professionals and employees can navigate the system with ease. No extensive training required—users can become productive from day one. Clear menus, logical workflows, and helpful tooltips make everyday tasks simple and efficient.</p>
+                </div>
+
+                <!-- Reason 2: Cost-Effective Solution -->
+                <div class="reason-item">
+                    <h3>Cost-Effective Solution</h3>
+                    <p>Reduce operational costs through automation of manual HR processes. Eliminate the need for expensive third-party HR solutions. Our flexible pricing plans are designed to scale with your organization's needs, ensuring you only pay for what you use.</p>
+                </div>
+
+                <!-- Reason 3: Enhanced Data Security -->
+                <div class="reason-item">
+                    <h3>Enhanced Data Security</h3>
+                    <p>Protect sensitive employee information with enterprise-grade security. We implement industry-standard encryption, regular security audits, and compliance with data protection regulations. Your employee data is always safe and compliant with international standards.</p>
+                </div>
+
+                <!-- Reason 4: Scalability -->
+                <div class="reason-item">
+                    <h3>Scalability</h3>
+                    <p>Whether you have 50 or 5000 employees, our system scales seamlessly. Start with essential modules and add features as your organization grows. Our infrastructure supports unlimited user growth without performance degradation.</p>
+                </div>
+
+                <!-- Reason 5: 24/7 Customer Support -->
+                <div class="reason-item">
+                    <h3>24/7 Customer Support</h3>
+                    <p>Our dedicated support team is available around the clock to assist you. Whether you have technical questions or need guidance on best practices, we're here to help. Fast response times and expert support ensure minimal downtime for your HR operations.</p>
+                </div>
+
+                <!-- Reason 6: Seamless Integration -->
+                <div class="reason-item">
+                    <h3>Seamless Integration</h3>
+                    <p>Integrate easily with your existing business tools and systems. Our APIs support integration with accounting software, email platforms, and communication tools. Create a unified workplace technology ecosystem that works together seamlessly.</p>
+                </div>
+
+                <!-- Reason 7: Continuous Innovation -->
+                <div class="reason-item">
+                    <h3>Continuous Innovation</h3>
+                    <p>We regularly update our platform with new features based on user feedback and industry trends. Stay ahead of HR management challenges with our continuous innovation. Access the latest HR technology without additional costs or migration hassles.</p>
+                </div>
+
+                <!-- Reason 8: Comprehensive Training -->
+                <div class="reason-item">
+                    <h3>Comprehensive Training</h3>
+                    <p>We provide extensive training resources including video tutorials, documentation, and webinars. Our onboarding specialists help ensure successful implementation. Empower your team with knowledge to maximize the value of our platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <!-- Short quotes from users for beginner-friendly credibility -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="section-container">
+            <h2>What Teams Are Saying</h2>
+            <p class="section-intro">Real feedback from HR teams who want simpler workflows.</p>
+            <!-- Testimonials image -->
+            <div class="section-media">
+                <img src="https://via.placeholder.com/700x420?text=Customer+Stories" alt="Customer testimonial highlights">
+            </div>
+            <div class="testimonials-grid">
+                <article class="testimonial-card">
+                    <h3>“Clear and easy”</h3>
+                    <p>The onboarding checklist made our new hires productive from the first week.</p>
+                    <p class="testimonial-name">— Anita, HR Manager</p>
+                </article>
+                <article class="testimonial-card">
+                    <h3>“Saves us hours”</h3>
+                    <p>Payroll and attendance are finally in one place, and approvals are fast.</p>
+                    <p class="testimonial-name">— David, Operations</p>
+                </article>
+                <article class="testimonial-card">
+                    <h3>“Great for small teams”</h3>
+                    <p>We were able to set up everything in a single afternoon.</p>
+                    <p class="testimonial-name">— Mary, Founder</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <!-- This section addresses common questions potential customers might have -->
+    <!-- Provides clear, concise answers to help users understand the system better -->
+    <section id="faq" class="faq-section">
+        <div class="section-container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <!-- FAQ image -->
+            <div class="section-media">
+                <img src="https://via.placeholder.com/700x420?text=FAQs" alt="FAQ help and support illustration">
+            </div>
+            <div class="faq-container">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <h3>What is the HR Management System?</h3>
+                    <p>The HR Management System is a comprehensive software solution designed to automate and streamline all aspects of human resources management. It handles employee management, recruitment, payroll, leave tracking, performance appraisals, and compliance reporting in a single integrated platform.</p>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <h3>Who can benefit from this system?</h3>
+                    <p>Our HR Management System is suitable for organizations of all sizes, from small businesses with 50 employees to large enterprises with thousands of staff members. It's particularly beneficial for organizations looking to reduce administrative burden, improve employee engagement, and make data-driven HR decisions.</p>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <h3>How secure is employee data in your system?</h3>
+                    <p>We prioritize data security with enterprise-grade encryption, multi-factor authentication, and regular security audits. Our system complies with international data protection standards including GDPR. All data is backed up regularly and stored in secure, geographically distributed data centers.</p>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <h3>Can we customize the system to match our company's processes?</h3>
+                    <p>Yes, our HR Management System is highly configurable. You can customize workflows, create custom fields, define organizational structures, and set up role-specific permissions. Our implementation team can assist you in tailoring the system to your specific business requirements.</p>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+                    <h3>Is there a trial period available?</h3>
+                    <p>Yes, we offer a free trial period so you can explore our features before making a commitment. During the trial, you'll have access to all core features and can experience firsthand how our system can transform your HR operations. Our support team is also available to answer questions during the trial.</p>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="faq-item">
+                    <h3>What kind of support do you provide?</h3>
+                    <p>We offer comprehensive support including 24/7 technical assistance, email support, phone support, and live chat. Our support team can help with system issues, feature guidance, and best practice recommendations. We also provide extensive documentation and regular training webinars.</p>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="faq-item">
+                    <h3>Can the system integrate with our existing software?</h3>
+                    <p>Yes, our system offers API integration capabilities with popular business software including accounting applications, email platforms, and communication tools. We can also provide custom integration solutions for specific requirements. Our technical team can assess your existing software stack and recommend integration options.</p>
+                </div>
+
+                <!-- FAQ 8 -->
+                <div class="faq-item">
+                    <h3>What happens if we need to scale up or down?</h3>
+                    <p>Our flexible pricing model allows you to scale your subscription based on your needs. As your organization grows or changes, you can easily upgrade or downgrade your plan. There are no long-term contracts, giving you flexibility to adapt to changing business requirements.</p>
+                </div>
+
+                <!-- FAQ 9 -->
+                <div class="faq-item">
+                    <h3>How long does the implementation process take?</h3>
+                    <p>The implementation timeline depends on your organization's size and complexity. For small organizations, setup can be completed in 2-4 weeks. Larger organizations may require 6-12 weeks. Our implementation team will work with you to establish a realistic timeline and ensure a smooth transition.</p>
+                </div>
+
+                <!-- FAQ 10 -->
+                <div class="faq-item">
+                    <h3>Will we lose our data if we decide to discontinue the service?</h3>
+                    <p>No, your data is always yours. When you discontinue the service, we provide a complete data export in standard formats. You'll have full access to your data even after the service ends. We maintain data backups and ensure no information is lost during the transition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== QUICK LINKS SECTION ===== -->
+    <!-- Provides convenient access to key pages on the website -->
+    <!-- Helps users quickly navigate to important sections or sign up pages -->
+    <section class="quick-links-section">
+        <div class="section-container">
+            <h2>Quick Navigation</h2>
+            <p>Access our related pages:</p>
+            <!-- Quick links image -->
+            <div class="section-media">
+                <img src="https://via.placeholder.com/700x420?text=Quick+Links" alt="Quick navigation links illustration">
+            </div>
+            <div class="links-container">
+                <a href="signup.html">Sign Up</a>
+                <a href="signIn.html">Sign In</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER SECTION ===== -->
+    <!-- Contains copyright information, quick links, and contact details -->
+    <!-- Provides a consistent footer across all pages for branding and navigation -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>HR Management System</h3>
+                <p>&copy; 2026 HR Management System. All rights reserved.</p>
+                <p>Empowering organizations through intelligent HR solutions.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <h4>Connect With Us</h4>
+                <p>Email: info@hrmanagement.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <p>Address: 123 Business Ave, Tech City, TC 12345</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>    

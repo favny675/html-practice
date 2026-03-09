@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple HR Management Dashboard">
+    <title>HR Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+    <!-- ===== DASHBOARD LAYOUT ===== -->
+    <div class="dashboard-layout">
+        <!-- Sidebar navigation (no JavaScript needed) -->
+        <aside class="sidebar">
+            <h2>HMS Dashboard</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Employees</a></li>
+                    <li><a href="#">Recruitment</a></li>
+                    <li><a href="#">Attendance</a></li>
+                    <li><a href="#">Payroll</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main content area -->
+        <main class="dashboard-main">
+            <!-- Welcome header -->
+            <header class="dashboard-header">
+                <h1>Welcome, HR Team</h1>
+                <p>Here is a quick look at your daily HR activities.</p>
+            </header>
+
+            <!-- Quick stats cards -->
+            <section class="dashboard-cards">
+                <article class="dashboard-card">
+                    <h3>Employees</h3>
+                    <p>1,248 active</p>
+                </article>
+                <article class="dashboard-card">
+                    <h3>Open Roles</h3>
+                    <p>12 positions</p>
+                </article>
+                <article class="dashboard-card">
+                    <h3>Leave Requests</h3>
+                    <p>8 pending</p>
+                </article>
+                <article class="dashboard-card">
+                    <h3>Payroll</h3>
+                    <p>Next run: Feb 28</p>
+                </article>
+            </section>
+
+            <!-- Detail panels -->
+            <section class="dashboard-details">
+                <div class="detail-panel">
+                    <h2>Today’s Tasks</h2>
+                    <ul>
+                        <li><span>Review new applicants</span><span>5</span></li>
+                        <li><span>Approve leave</span><span>3</span></li>
+                        <li><span>Schedule interviews</span><span>4</span></li>
+                        <li><span>Send onboarding emails</span><span>2</span></li>
+                    </ul>
+                </div>
+                <div class="detail-panel">
+                    <h2>Department Snapshot</h2>
+                    <ul>
+                        <li><span>Engineering</span><span>320</span></li>
+                        <li><span>Sales</span><span>210</span></li>
+                        <li><span>Support</span><span>180</span></li>
+                        <li><span>Marketing</span><span>95</span></li>
+                    </ul>
+                </div>
+                <div class="detail-panel">
+                    <h2>Recent Activity</h2>
+                    <ul>
+                        <li><span>New hire: Ada</span><span>Today</span></li>
+                        <li><span>Payroll processed</span><span>Yesterday</span></li>
+                        <li><span>Policy update</span><span>2 days ago</span></li>
+                        <li><span>Training completed</span><span>3 days ago</span></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

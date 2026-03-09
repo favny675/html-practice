@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Box Model Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--
+    This page is a simple example showing ONE card.
+    The goal is to understand the CSS box model:
+    - content
+    - padding
+    - border
+    - margin
+-->
+<body class="box-page-body">
+    <main class="box-page-main">
+        <h1>Card Box Model Demo</h1>
+        <p class="box-page-intro">
+            This card is styled to clearly show how margin, border and padding work around content.
+        </p>
+
+        <!--
+            Outer card element:
+            - margin = space OUTSIDE the card
+            - border = line around the card
+            - padding = space between border and content
+            - content = actual text and elements inside
+        -->
+        <section class="box-card">
+            <!-- This is the CONTENT area inside the padding and border -->
+            <h2 class="box-card-title">Employee Summary Card</h2>
+            <p class="box-card-text">
+                This is an example of a simple information card.
+                The space between this text and the blue border is the <strong>padding</strong>.
+            </p>
+            <p class="box-card-text">
+                The space between this card and the edge of the page or other elements is the <strong>margin</strong>.
+            </p>
+        </section>
+
+        <!--
+            Tip:
+            Try changing the padding, border width, and margin sizes in CSS
+            to see how the box model affects the card.
+        -->
+    </main>
+</body>
+</html>
+

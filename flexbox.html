@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Basics Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--
+    This page shows VERY SIMPLE examples of Flexbox.
+    You will see the same structure as other pages:
+    - a heading
+    - a short explanation
+    - a box with 3 small items inside
+    We only change one or two flex properties at a time.
+-->
+<body class="flex-page-body">
+    <main class="flex-page-main">
+        <h1>Flexbox Basics (Beginner)</h1>
+        <p class="flex-page-intro">
+            Each example below uses a flex container and three boxes. Read the comments and
+            then change the CSS values to see what happens.
+        </p>
+
+        <!-- Example 1: flex-direction (row vs column) -->
+        <section class="flex-section">
+            <h2>1. flex-direction (row / column)</h2>
+            <p class="flex-section-note">
+                <code>flex-direction</code> decides if items go in a row (left to right) or in a column (top to bottom).
+            </p>
+
+            <!-- Row direction -->
+            <div class="flex-demo flex-direction-row">
+                <!-- display: flex + flex-direction: row (items go left to right) -->
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+
+            <!-- Column direction -->
+            <div class="flex-demo flex-direction-column">
+                <!-- flex-direction: column (items go top to bottom) -->
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+        </section>
+
+        <!-- Example 2: justify-content (main axis alignment) -->
+        <section class="flex-section">
+            <h2>2. justify-content (left / center / spread out)</h2>
+            <p class="flex-section-note">
+                <code>justify-content</code> moves items left, right, center, or spreads them out on the main line.
+            </p>
+
+            <div class="flex-demo flex-justify-space-between">
+                <!-- justify-content: space-between (first at left, last at right, space in the middle) -->
+                <div class="flex-item">A</div>
+                <div class="flex-item">B</div>
+                <div class="flex-item">C</div>
+            </div>
+
+            <div class="flex-demo flex-justify-center">
+                <!-- justify-content: center (items stay together in the middle) -->
+                <div class="flex-item">A</div>
+                <div class="flex-item">B</div>
+                <div class="flex-item">C</div>
+            </div>
+        </section>
+
+        <!-- Example 3: align-items (cross axis alignment) -->
+        <section class="flex-section">
+            <h2>3. align-items (vertical centering)</h2>
+            <p class="flex-section-note">
+                <code>align-items</code> controls how items sit up and down inside the flex container.
+            </p>
+
+            <div class="flex-demo flex-align-center">
+                <!-- align-items: center (items are centered up and down) -->
+                <div class="flex-item flex-item-tall">Tall</div>
+                <div class="flex-item">Mid</div>
+                <div class="flex-item">Mid</div>
+            </div>
+        </section>
+
+        <!-- Example 4: flex-wrap (wrapping to next line) -->
+        <section class="flex-section">
+            <h2>4. flex-wrap (go to next line)</h2>
+            <p class="flex-section-note">
+                <code>flex-wrap</code> lets items move onto a new line when the row is too full.
+            </p>
+
+            <div class="flex-demo flex-wrap-demo">
+                <!-- flex-wrap: wrap (items jump to a new line when there is no space) -->
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+                <div class="flex-item">4</div>
+                <div class="flex-item">5</div>
+                <div class="flex-item">6</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
